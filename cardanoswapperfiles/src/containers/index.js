@@ -1,0 +1,6 @@
+export { default as Footer } from './footer/Footer'
+export { default as Navbar } from './navbar/Navbar'
+export { default as Homepagemain } from './homepagemain/Homepagemain'
+export { default as Proposepagemain } from './proposepagemain/Proposepagemain'
+export { default as Acceptpagemain } from './acceptpagemain/Acceptpagemain'
+export { default as Historypagemain } from './historypagemain/Historypagemain'

@@ -1,0 +1,38 @@
+.DisconnectWalletContainer {
+    left: 50%;
+    margin-left: -200px;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: rgb(62, 72, 189);
+    background: radial-gradient(circle, rgba(62, 72, 189, 1) 0%, rgba(102, 148, 201, 1) 100%);
+    border-radius: 10px;
+    pointer-events: all;
+}
+
+.Title {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-size: x-large;
+    margin-left: 20px;
+    color: aliceblue;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.Info {
+    height: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.DisconnectButtonContainer {
+    height: 10%;
+}
