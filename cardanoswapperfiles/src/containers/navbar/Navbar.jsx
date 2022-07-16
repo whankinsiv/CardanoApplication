@@ -120,4 +120,9 @@ const Navbar = (props) => {
     )
 }
 
+export const UpdateProposePage = () => {
+    const xhttp = new XMLHttpRequest();
+    
+}
+
 export default Navbar
