@@ -117,6 +117,8 @@ export class WalletHandler extends React.Component {
         this.state.WalletConnected = false;
         this.state.WalletConnected = false;
         this.state.Balance = 0;
+        /* We need to create the balance for the assets 0 */
+
     }
     /* Gets the balance of the connected wallet minus total locked.
        Note: Does not include rewards available  */
