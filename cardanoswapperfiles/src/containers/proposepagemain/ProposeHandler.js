@@ -11,10 +11,8 @@ export default class ProposeHandler extends Component {
         this.state = {
             Wallet: getWalletState(),
             Assets: [],
-            NumofAssets: 0
         }
     }
-
     render() {
         this.state.Assets = this.state.Wallet.state.Assets;
         return (
