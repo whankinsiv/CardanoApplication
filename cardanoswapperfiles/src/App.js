@@ -15,6 +15,7 @@ import Accept from "./pages/Accept"
 import History from "./pages/History"
 import { WalletHandler } from './components/pagecomps/WalletHandler';
 
+/* Yoo yooo */
 const WalletState = new WalletHandler()
 export function getWalletState() {
   return WalletState
