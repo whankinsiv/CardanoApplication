@@ -20,6 +20,8 @@ export function getWalletState() {
   return WalletState
 }
 
+/* Does it show */
+
 function App() {
   return (
     <Router>
