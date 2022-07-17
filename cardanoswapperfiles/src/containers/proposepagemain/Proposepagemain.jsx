@@ -3,19 +3,24 @@ import { getWalletState } from '../../App'
 import './proposepagemain.css'
 import { AssetDisplay } from '../../components/pagecomps/AssetDisplay'
 
+const DisplayAssets = () => {
+    const Wallet = getWalletState();
+    const Assets = Wallet.state.Assets;
+    return (
+        Assets.map((asset, index) => {
+            return (
+                <div key={index} className="AssetDisplayContainer">
+                    {AssetDisplay(Assets[index].state.AssetName, Assets[index].state.AssetAmount)}
+                </div>
+            )
+        })
+
+    )
+}
+
 const Proposepagemain = () => {
     const Wallet = getWalletState();
     const Assets = Wallet.state.Assets;
-
-    /* {this.state.Assets.map((asset, index) => {
-                        return (
-                            <div key={index} className="AssetDisplayContainer">
-                                {AssetDisplay(this.state.Assets[index].state.AssetName, this.state.Assets[index].state.AssetAmount)}
-                            </div>
-                        )
-                    })}
-                    {AssetDisplay("ADA", this.state.Wallet.state.Balance)} */
-
     return (
         <div className='proposepagemain'>
             <div className='ProposeContainer' >
@@ -31,7 +36,8 @@ const Proposepagemain = () => {
                     CPSelectedItems
                 </div>
                 <div className='AvailableItems BoxStyling'>
-
+                    {AssetDisplay("ADA", Wallet.state.Balance)}
+                    <DisplayAssets />
                 </div>
 
                 <div className='CPAvailableItems BoxStyling'>

@@ -22,6 +22,8 @@
 
 .BoxStyling {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     border-radius: 10px;
     width: 35%;
@@ -40,11 +42,6 @@
     position: absolute;
     left: 2%;
     top: 12%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-
 }
 
 .CPSelectedItems {
