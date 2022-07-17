@@ -7,8 +7,6 @@ import {
     TransactionUnspentOutput,
 } from '@emurgo/cardano-serialization-lib-asmjs';
 import { CloseButtonPushed, DisconnectButtonPushed, DisplayWalletBalance, DisplayWalletName, DisplayRewardAddress } from './DisconnectWalletpopup'
-import { GrClose } from 'react-icons/gr';
-import { AssetDisplay } from './AssetDisplay';
 import { AddAsset } from './AddAsset.js';
 
 let Buffer = require('buffer/').Buffer;
@@ -109,7 +107,6 @@ export class WalletHandler extends React.Component {
         DisplayWalletName();
         DisplayRewardAddress();
         DisplayWalletInfo();
-
     }
 
     async DiconnectWallet() {

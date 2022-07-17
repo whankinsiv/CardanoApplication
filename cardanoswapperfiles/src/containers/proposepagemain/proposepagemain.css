@@ -22,7 +22,9 @@
 
 .BoxStyling {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    overflow: scroll;
+    scroll-behavior: smooth;
     flex-wrap: wrap;
     flex-direction: row;
     border-radius: 10px;
