@@ -1,5 +1,135 @@
 .proposepagemain {
-    height: 89vh;
+    height: 100%;
+    width: 100%;
     color: aliceblue;
     z-index: 2;
+    display: flex;
+}
+
+.ProposeContainer {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ProposeButton {
+    position: absolute;
+    height: 32px;
+    width: 15vw;
+    right: 50%;
+    top: 25%;
+}
+
+.BoxStyling {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 35%;
+    height: 35vh;
+    background-color: rgba(240, 248, 255, 0.2);
+    color: black;
+}
+
+.AvailableItems {
+    bottom: 7%;
+    left: 2%;
+    position: absolute;
+}
+
+.SelectedItems {
+    position: absolute;
+    left: 2%;
+    top: 12%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.CPSelectedItems {
+    top: 12%;
+    right: 2%;
+    position: absolute;
+}
+
+.CPAvailableItems {
+    bottom: 7%;
+    right: 2%;
+    position: absolute;
+}
+
+
+/* Rainbow button styling */
+.button-styling {
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: var(--color-bg);
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-styling:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-styling:after {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    border-radius: 10px;
+}
+
+.button-position {
+    font-size: 12px;
+    top: 20%;
+    right: -50%;
+    width: 15vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    .button-position {
+        font-size: 8px;
+    }
 }
